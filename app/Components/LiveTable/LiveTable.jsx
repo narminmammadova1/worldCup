@@ -9,7 +9,7 @@ const LiveTable = () => {
     },[])
   return (
     <div>
-        <table className='text-white text-base w-full'>
+        <table className='text-white mt-[96px] text-base w-full'>
             <thead>
                 <tr className=''>
                     <td className='w-1/10'></td>
@@ -28,7 +28,7 @@ const LiveTable = () => {
             > 
             {liveDatas.map((data,index)=>(
  <tr key={index}  className="relative  after:absolute after:bottom-0   after:left-0 after:w-full after:h-[1px] after:bg-[linear-gradient(90deg,rgba(106,33,244,0)_0%,rgba(106,33,244,0.9)_44.79%)]">
- <td  className=' align-top pt-2 '><div className=''> 
+ <td  className=' align-top pt-2 '><div className='w-[48px] h-[32px]' > 
      <img src={data.Icon} alt="" />
      </div></td>
  <td className=' align-top pt-4'>
@@ -37,13 +37,53 @@ const LiveTable = () => {
      {/* 2222 */}
       </td>
  <td className=' text-start align-top pt-4'><div>{data.Bib}</div></td>
- <td className='  align-top pt-4 '><div className=' me-12'>{data.Name}</div></td>
- <td className='  align-top pt-4'><div>D:{data.D}</div></td>
- <td className='  align-top pt-4'><div>D:{data.E}</div></td>
- <td className='  align-top  pt-4'> <div>P:{data.Pen}</div></td>
- <td className='  align-top pt-4'><div className='flex gap-3 items-center justify-center'><p>{data.App.score}</p><div className='w-[32px]  h-[32px] bg-[#0A8BEC] flex items-center justify-center'>{data.App.count}</div></div></td>
- <td className='  align-top pt-4 '><div  className='flex gap-3 items-center justify-center  mx-12' ><p>{data.App.score}</p><div className='w-[32px] h-[32px] bg-[#0A8BEC]  flex items-center justify-center'>{data.AA.count}</div></div></td>
- <td className='pb-[22px] pt-4 '><div  className='flex gap-3 items-center justify-end'><p>{data.TeamScore.score}</p><div className='w-[32px] h-[32px] bg-[#0A8BEC]  flex items-center justify-center'>{data.TeamScore.count}</div></div></td>
+ <td className='  align-top pt-4 '><div className=' me-6 '>{data.Name}</div></td>
+ <td className='  align-top py-4'> {data.D ? (
+    <div className=' '> {data.D}</div>
+  ) : data.App?.status ? (
+    <div className={`w-[95px] py-2 text-sm font-medium rounded-lg text-white flex items-center justify-center ${data.App.status === "Wait" ? "bg-yellow-400" : "bg-green-400"}`}>
+      {data.App.status}
+    </div>
+  ) : (
+    <div className="text-gray-400">—</div>
+  )}</td>
+ <td className='  align-top pt-4'><div>{data.E}</div></td>
+ <td className='  align-top  pt-4'> <div>{data.Pen}</div></td>
+ <td className='align-top pt-4'>
+  {data.App?.score && data.App?.count ? (
+    <div className='flex gap-3 items-center justify-center'>
+      <p>{data.App.score}</p>
+      <div className='w-[48px] h-[24px] bg-[#0A8BEC] text-white text-sm font-medium rounded-md flex items-center justify-center'>
+        {data.App.count}
+      </div>
+    </div>
+  ) : null}
+</td>
+
+<td className='align-top pt-4'>
+  {data.AA?.score && data.AA?.count ? (
+    <div className='flex gap-3 items-center justify-center mx-12'>
+      <p>{data.AA.score}</p>
+      <div className='w-[48px] h-[24px] bg-[#0A8BEC] text-white text-sm font-medium rounded-md flex items-center justify-center'>
+        {data.AA.count}
+      </div>
+    </div>
+  ) : null}
+</td>
+
+<td className='pb-[22px] pt-4'>
+  {data.TeamScore?.score && data.TeamScore?.count ? (
+    <div className='flex gap-3 items-center justify-end'>
+      <p>{data.TeamScore.score}</p>
+      <div className='w-[48px] h-[24px] bg-[#0A8BEC] text-white text-sm font-medium rounded-md flex items-center justify-center'>
+        {data.TeamScore.count}
+      </div>
+    </div>
+  ) : null}
+</td>
+ {/* <td className='  align-top pt-4'><div className='flex gap-3 items-center justify-center'><p>{data.App.score}</p><div className='w-[32px]  h-[32px] bg-[#0A8BEC] flex items-center justify-center'>{data.App.count}</div></div></td> */}
+ {/* <td className='  align-top pt-4 '><div  className='flex gap-3 items-center justify-center  mx-12' ><p>{data.App.score}</p><div className='w-[32px] h-[32px] bg-[#0A8BEC]  flex items-center justify-center'>{data.AA.count}</div></div></td> */}
+ {/* <td className='pb-[22px] pt-4 '><div  className='flex gap-3 items-center justify-end'><p>{data.TeamScore.score}</p><div className='w-[32px] h-[32px] bg-[#0A8BEC]  flex items-center justify-center'>{data.TeamScore.count}</div></div></td> */}
 </tr>
 
             ))}

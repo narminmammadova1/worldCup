@@ -1,14 +1,15 @@
 
+
 "use client";
 
 import React, { useState, useEffect } from "react";
-import resultData from "../../resultData.json";
+import liveData from "../../liveData.json"
 
-const DropDown = () => {
+const DropDown2 = () => {
   const [openId, setOpenId] = useState(null);
   const [datas, setDatas] = useState([]);
   useEffect(() => {
-    setDatas(resultData);
+    setDatas(liveData);
   }, []);
 
   const toggleDropdown = (id) => {
@@ -24,9 +25,10 @@ const DropDown = () => {
             className={`bg-[#1A1635] text-white h-[56px] px-4 py-2 flex justify-between items-center text-base ${
               openId === data.id ? "rounded-t-md" : "rounded-md"
             } w-full`}
-          ><div className="w-[32px] flex items-center justify-center h-[32px] bg-[#0A8BEC]">
-            {index+1}
-          </div>            
+          ><div className='w-[40px] h-[32px]' > 
+     <img src={data.Icon} alt="" />
+     </div>
+            
             <div className=" ">{data.Team}</div>
             <div className=" flex justify w-1/2  text-start ">{data.Name}</div>
             <div>{data.Bib}</div>
@@ -50,15 +52,27 @@ const DropDown = () => {
                 </div>
                 <div className="flex justify-between">
                   <p>App</p>
-                  <p>{data.Total}</p>
+                  <div className="flex items-center gap-[22px]">
+                  <p>{data.App.score}</p>
+                  <div className=" w-[32px] h-[32px] flex justify-center items-center bg-[#0A8BEC]">{data.App.count}</div>
+                  </div>
+                 
                 </div>
                 <div className="flex justify-between">
                   <p>AA</p>
-                  <p>{Number(data.D + data.E).toFixed(3)}</p>
+                  <div className="flex items-center gap-[22px]">
+                  <p>{data.AA.score}</p>
+                  <div className=" w-[32px] h-[32px] flex justify-center items-center bg-[#0A8BEC]">{data.AA.count}</div>
+                  </div>
+                 
                 </div>
                 <div className="flex justify-between">
                   <p>Team</p>
-                  <p>{data.Total}</p>
+                  <div className="flex items-center gap-[22px]">
+                  <p>{data.TeamScore.score}</p>
+                  <div className=" w-[32px] h-[32px] flex justify-center items-center bg-[#0A8BEC]">{data.TeamScore.count}</div>
+                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -69,4 +83,4 @@ const DropDown = () => {
   );
 };
 
-export default DropDown;
+export default DropDown2;

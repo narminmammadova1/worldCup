@@ -3,6 +3,9 @@ import React from 'react'
 import  ResultTable from "../Components/ResultTable/ResultTable"
 import ResultFilter from "@/app/Components/ResultTilter/ResultFilter"
 import DropDown from "@/app/Components/DropDown/DropDown"
+import resultData from "../resultData.json";
+
+
 const Result = () => {
   return (
     <div className=' mx-4 md:mx-0 text-white '>
@@ -65,7 +68,7 @@ const Result = () => {
       <ResultFilter/>
     </section>
     <section className='  block md:hidden'>
-      <DropDown/>
+      <DropDown />
     </section>
 
   

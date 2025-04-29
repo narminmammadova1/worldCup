@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import Header from "./Components/Header/header";
 
 const geistSans = Geist({
@@ -24,10 +28,10 @@ export default function RootLayout({
     <html lang="en">
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased mx-0 md:mx-[108px]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased mt-[124px] mx-4 md:mx-[108px]`}
       >
-        {/* <Header/> */}
-        <main >   {children}</main>
+        <Header/>
+        <main className="mx-4" >   {children}</main>
      
       </body>
     </html>

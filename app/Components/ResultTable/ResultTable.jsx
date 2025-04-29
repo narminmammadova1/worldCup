@@ -31,7 +31,7 @@ const ResultTable = () => {
             <tbody className=' '>
                 {datas.map((data,index)=>(
  <tr key={index} className="   relative after:absolute after:mb-[22px] after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-[linear-gradient(90deg,rgba(106,33,244,0)_0%,rgba(106,33,244,0.9)_44.79%)]" > 
- <td ><div className='w-[32px]   absolute top-0 flex items-center justify-center h-[32px] bg-[#0A8BEC]'>1</div></td>
+ <td ><div className='w-[32px]   absolute top-0 flex items-center justify-center h-[32px] bg-[#0A8BEC]'>{index+1}</div></td>
  <td className=''><div className=' absolute top-0 flex gap-2 text-base font-[400]'><img src={data.Flag} alt="" /> {data.Team}</div></td>
  <td><div className=' absolute top-0'>{data.Bib}</div></td>
  <td className='flex  items-start mt-0'><div >{data.Name}</div></td>

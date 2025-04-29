@@ -1,11 +1,13 @@
-
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Link from 'next/link';
-
+ import SliderComponent from "../../Components/SliderComponent/SliderComponenet"
+import { usePathname } from 'next/navigation';
 const Header = () => {
+  const pathname=usePathname()
   return (
-    <div className=' '>
-        <div className="fixed top-[31px] left-[31px] z-50 lg:hidden">
+    <div className=''>
+        <div className=" fixed top-[31px] right-[31px]   z-50 lg:hidden">
     <img src="hamburger.svg" alt="Hamburger Menu" className="w-8 h-8" />
   </div>
 
@@ -29,46 +31,64 @@ const Header = () => {
       
       </div></div>
       <div className=' mt-12 border-b-[1px] border-[#1A1635]'>
-            <nav>
-                <ul className='   flex text-white font-extralight  text-[20px]'>
-                    <Link href="/Live">
-                      <div  className='w-[245px] flex  justify-center items-start   h-[52px] '>
-                      
-                      <div className='flex items-center gap-[6px] '> 
-                      <div className='w-2 h-2 flex item-center   rounded-full bg-red-600'></div>
-                      Live
-                      </div>
-                   </div></Link>
-                    <li>  <div  className='w-[245px] flex  justify-center items-start   h-[52px] '>
-                      
-                      <div className='flex items-center gap-[6px]'> 
-                      <div className='w-2 h-2 flex item-center  rounded-full bg-red-600'></div>
-                      Starlist
-                      </div>
-                   </div></li>
-                    <li>  <div  className='w-[245px] flex  justify-center items-start h-[52px] '>
-                      
-                      <div className='flex items-center gap-[6px]'> 
-                      <div className='w-2 h-2 flex item-center  rounded-full bg-red-600'></div>
-                      Schedule
-                      </div>
-                   </div></li>
-                    <Link href="/Result" className='  '><div  className='w-[245px] flex  justify-center items-start  border-b-[2px] border-[#0A8BEC]  h-[52px] '>
-                      
-                      <div className='flex items-center gap-[6px] '> 
-                      <div className='w-2 h-2 flex item-center  rounded-full bg-red-600'></div>
-                      Results
-                      </div>
-                   </div></Link>
-                    <li>  <div  className='w-[245px] flex  justify-center items-start  h-[52px] '>
-                      
-                      <div className='flex items-center gap-[6px]'> 
-                      <div className='w-2 h-2 flex item-center  rounded-full bg-red-600'></div>
-                      Medals
-                      </div>
-                   </div></li>
-                </ul>
-            </nav>
+
+
+<div>
+  
+</div>
+<div className='w-full text-white  text-base md:text-[20px]'>
+<SliderComponent>
+  <Link href="/Live">
+    <div 
+    className={`w-[148px] lg:w-[245px] flex justify-center items-start ${pathname==="/Live" ? " border-b-[2px] border-[#0A8BEC]"  :""} h-[52px]`}>
+      <div className="flex items-center gap-[6px]">
+        <div className={`w-2 h-2 rounded-full ${pathname === "/Live" ? "bg-red-600" : "bg-transparent"}`}></div>
+        Live
+      </div>
+    </div>
+  </Link>
+  <Link href="">
+    <div 
+   className={`w-[148px] lg:w-[245px] flex justify-center items-start ${pathname==="/StarList" ? " border-b-[2px] border-[#0A8BEC]"  :""} h-[52px]`}>
+      <div className="flex items-center gap-[6px]">
+        <div className={`w-2 h-2 rounded-full ${pathname === "/StarList" ? "bg-red-600" : "bg-transparent"}`}></div>
+        Starlist
+      </div>
+    </div>
+  </Link>
+  <Link href="">
+    <div 
+    className={`w-[148px] lg:w-[245px] flex justify-center items-start ${pathname==="/Schedule" ? " border-b-[2px] border-[#0A8BEC]"  :""} h-[52px]`}>
+      <div className="flex items-center gap-[6px]">
+        <div className={`w-2 h-2 rounded-full ${pathname === "/Schedule" ? "bg-red-600" : "bg-transparent"}`}></div>
+        Schedule
+      </div>
+    </div>
+  </Link>
+  <Link href="/Result">
+    <div 
+    className={`w-[148px] lg:w-[245px] flex justify-center items-start ${pathname==="/Result" ? " border-b-[2px] border-[#0A8BEC]"  :""} h-[52px]`}>
+      <div className="flex items-center gap-[6px]">
+        <div className={`w-2 h-2 rounded-full ${pathname === "/Result" ? "bg-red-600" : "bg-transparent"}`}></div>
+        Results
+      </div>
+    </div>
+  </Link>
+  <Link href="">
+    <div 
+    className={`w-[148px] lg:w-[245px] flex justify-center items-start ${pathname==="/Medals" ? " border-b-[2px] border-[#0A8BEC]"  :""} h-[52px]`}>
+      <div className="flex items-center gap-[6px]">
+        <div className={`w-2 h-2 rounded-full ${pathname === "/Medals" ? "bg-red-600" : "bg-transparent"}`}></div>
+        Medals
+      </div>
+    </div>
+  </Link>
+</SliderComponent>
+</div>
+
+
+     
+         
         </div>
     
         </header>

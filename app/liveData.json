@@ -1,128 +1,139 @@
 [
-    {
-      "Team": "AZE",
-      "Flag": "aze.svg",
-      "Bib": 212,
-      "Name": "Amirbekov T.",
-      "D": 5.400,
-      "E": 8.800,
-      "Pen": 0.3,
-      "App": {
-        "score": 12.500,
-        "count": 7
-      },
-      "AA": {
-        "score": 102.360,
-        "count": 4
-      },
-      "TeamScore": {
-        "score": 102.360,
-        "count": 12
-      }
+  {
+    "id": 1,
+    "Icon": "icon1.svg",
+    "Team": "AZE",
+    "Flag": "aze.svg",
+    "Bib": 212,
+    "Name": "Amirbekov T.",
+    "D": "D:5.400",
+    "E": "E:8.800",
+    "Pen": "P:0.3",
+    "App": {
+      "score": 12.500,
+      "count": 7
     },
-    {
-      "Team": "RUS",
-      "Flag": "rus.svg",
-      "Bib": 132,
-      "Name": "Amirbekov Teymur",
-      "D": 5.400,
-      "E": 8.800,
-      "Pen": 0.3,
-      "App": {
-        "status": "Walk"
-      },
-      "AA": {
-        "score": 102.360,
-        "count": 4
-      },
-      "TeamScore": {
-        "score": 102.360,
-        "count": 12
-      }
+    "AA": {
+      "score": 102.360,
+      "count": 4
     },
-    {
-      "Team": "TUR",
-      "Flag": "tur.svg",
-      "Bib": 624,
-      "Name": "Terim F.",
-      "D": 5.400,
-      "E": 8.800,
-      "Pen": 0.3,
-      "App": {
-        "score": 12.500,
-        "count": 7
-      },
-      "AA": {
-        "score": 102.360,
-        "count": 4
-      },
-      "TeamScore": {
-        "score": 102.360,
-        "count": 12
-      }
-    },
-    {
-      "Team": "FRA",
-      "Flag": "fra.svg",
-      "Bib": 624,
-      "Name": "Terim F.",
-      "D": 5.400,
-      "E": 8.800,
-      "Pen": 0.3,
-      "App": {
-        "status": "Go"
-      },
-      "AA": {
-        "score": 102.360,
-        "count": 4
-      },
-      "TeamScore": {
-        "score": 102.360,
-        "count": 12
-      }
-    },
-    {
-      "Team": "ISR",
-      "Flag": "isr.svg",
-      "Bib": 401,
-      "Name": "Wilbord T.",
-      "D": 5.400,
-      "E": 8.800,
-      "Pen": 0.3,
-      "App": {
-        "score": 12.500,
-        "count": 15
-      },
-      "AA": {
-        "score": 102.360,
-        "count": 8
-      },
-      "TeamScore": {
-        "score": 102.360,
-        "count": 16
-      }
-    },
-    {
-      "Team": "GER",
-      "Flag": "ger.svg",
-      "Bib": 102,
-      "Name": "Balakov J.",
-      "D": 5.400,
-      "E": 8.800,
-      "Pen": 0.3,
-      "App": {
-        "score": 12.500,
-        "count": 15
-      },
-      "AA": {
-        "score": 102.360,
-        "count": 8
-      },
-      "TeamScore": {
-        "score": 102.360,
-        "count": 17
-      },
-      "Inquiry": true
+    "TeamScore": {
+      "score": 102.360,
+      "count": 12
     }
-  ]
-  
+  },
+  {
+    "id": 2,
+    "Icon": "icon2.svg",
+    "Team": "RUS",
+    "Flag": "rus.svg",
+    "Bib": 132,
+    "Name": "Amirbekov Teymur",
+    "D": "",
+    "E": "",
+    "Pen": "",
+    "App": {
+      "status": "Wait"
+    },
+    "AA": {
+      "score": "",
+      "count": ""
+    },
+    "TeamScore": {
+      "score": "",
+      "count": ""
+    }
+  },
+  {
+    "id": 3,
+    "Icon": "icon3.svg",
+    "Team": "TUR",
+    "Flag": "tur.svg",
+    "Bib": 624,
+    "Name": "Terim F.",
+    "D": "D:5.400",
+    "E": "E:8.800",
+    "Pen": "P:0.3",
+    "App": {
+      "score": 12.500,
+      "count": 7
+    },
+    "AA": {
+      "score": 102.360,
+      "count": 4
+    },
+    "TeamScore": {
+      "score": 102.360,
+      "count": 12
+    }
+  },
+  {
+    "id": 4,
+    "Icon": "icon4.svg",
+    "Team": "FRA",
+    "Flag": "rus.svg",
+    "Bib": 624,
+    "Name": "Terim F.",
+    "D": "",
+    "E": "",
+    "Pen": "",
+    "App": {
+      "status": "Go"
+    },
+    "AA": {
+      "score": "",
+      "count": ""
+    },
+    "TeamScore": {
+      "score": "",
+      "count": ""
+    }
+  },
+  {
+    "id": 5,
+    "Icon": "icon5.svg",
+    "Team": "ISR",
+    "Flag": "isr.svg",
+    "Bib": 401,
+    "Name": "Wilbord T.",
+    "D": "D:5.400",
+    "E": "E:8.800",
+    "Pen": "P:0.3",
+    "App": {
+      "score": 12.500,
+      "count": 15
+    },
+    "AA": {
+      "score": 102.360,
+      "count": 8
+    },
+    "TeamScore": {
+      "score": 102.360,
+      "count": 16
+    }
+  },
+  {
+    "id": 6,
+    "Icon": "icon6.svg",
+    "Team": "GER",
+    "Flag": "ger.svg",
+    "Bib": 102,
+    "Name": "Balakov J.",
+    "D": "D:5.400",
+    "E": "E:8.800",
+    "Pen": "P:0.3",
+    "App": {
+      "score": 12.500,
+      "count": 15
+    },
+    "AA": {
+      "score": 102.360,
+      "count": 8
+    },
+    "TeamScore": {
+      "score": 102.360,
+      "count": 17
+    },
+    "Inquiry": true
+  }
+]
