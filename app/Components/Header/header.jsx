@@ -40,9 +40,9 @@ const Header = () => {
 <SliderComponent>
   <Link href="/Live">
     <div 
-    className={`w-[148px] lg:w-[245px] flex justify-center items-start ${pathname==="/Live" ? " border-b-[2px] border-[#0A8BEC]"  :""} h-[52px]`}>
+    className={`w-[148px] lg:w-[245px] flex justify-center items-start ${(pathname === "/Live" || pathname === "/") ? "border-b-[2px] border-[#0A8BEC]" : ""} h-[52px]`}>
       <div className="flex items-center gap-[6px]">
-        <div className={`w-2 h-2 rounded-full ${pathname === "/Live" ? "bg-red-600" : "bg-transparent"}`}></div>
+        <div className={`w-2 h-2 rounded-full ${(pathname === "/Live" ||pathname === "/") ? "bg-red-600" : "bg-transparent"}`}></div>
         Live
       </div>
     </div>
