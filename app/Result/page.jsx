@@ -1,11 +1,13 @@
 
 import React from 'react'
 import  ResultTable from "../Components/ResultTable/ResultTable"
+import ResultFilter from "@/app/Components/ResultTilter/ResultFilter"
+import DropDown from "@/app/Components/DropDown/DropDown"
 const Result = () => {
   return (
-    <div className=' text-white '>
+    <div className=' mx-4 md:mx-0 text-white '>
       
-    <section className='mt-[56px] ms-[116px] '>
+    <section className='  mt-[56px] ms-[116px] hidden md:block '>
    <div className='flex ms-2 gap-5 h-12'>
     <div className='flex rounded-[8px] w-[192px] border-[1px] text-[16px] border-[#1A1635]'>
       <div className='w-1/2  rounded-[8px] flex  items-center  justify-center bg-[#1A1635]'>MAG</div>
@@ -56,7 +58,18 @@ const Result = () => {
    
       
     </section>
-    <ResultTable/>
+    <section className=' hidden md:block'>     
+      <ResultTable/>
+    </section>
+    <section className=' block md:hidden'>
+      <ResultFilter/>
+    </section>
+    <section className='  block md:hidden'>
+      <DropDown/>
+    </section>
+
+  
+   
     </div>
   )
 }

@@ -4,16 +4,22 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <div>
-        <header className='mb-[96px]'>
+    <div className=' '>
+        <div className="fixed top-[31px] left-[31px] z-50 lg:hidden">
+    <img src="hamburger.svg" alt="Hamburger Menu" className="w-8 h-8" />
+  </div>
+
+        <header className='mt-[64px] sm:mt-[96px]'>
+
           <div className='flex   gap-8 '>   <div className='flex   items-start text-start'>
-       <div>   <img className='mt-3' src="arrow.svg" alt="" />
+       <div>   <img className='mt-3 ' src="arrow.svg" alt="" />
        </div>
       
       </div>
-      <div className='text-[20px] text-[#F2F2F2]'>
-      <h1 className='text-[36px]  text-white'>FIG ARTISTIC GYMNASTICS WORLD CUP</h1>
-        <div className='flex gap-4  text-[20px] '> 
+      <div className='text-[20px]'>
+      <h1 className='text-[24px] md:text-[36px]  text-white'>FIG ARTISTIC GYMNASTICS WORLD CUP</h1>
+        <div className='flex gap-4 text-base md:text-[20px] text-[#9598B1]  md:text-[#F2F2F2]
+'> 
            <p className=' border-r-1 pe-4'>Doha, Qatar</p>
         <p>12/03/2023 - 13/02/2023</p>
        

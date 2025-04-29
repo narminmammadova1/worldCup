@@ -1,0 +1,128 @@
+[
+    {
+      "Team": "AZE",
+      "Flag": "aze.svg",
+      "Bib": 212,
+      "Name": "Amirbekov T.",
+      "D": 5.400,
+      "E": 8.800,
+      "Pen": 0.3,
+      "App": {
+        "score": 12.500,
+        "count": 7
+      },
+      "AA": {
+        "score": 102.360,
+        "count": 4
+      },
+      "TeamScore": {
+        "score": 102.360,
+        "count": 12
+      }
+    },
+    {
+      "Team": "RUS",
+      "Flag": "rus.svg",
+      "Bib": 132,
+      "Name": "Amirbekov Teymur",
+      "D": 5.400,
+      "E": 8.800,
+      "Pen": 0.3,
+      "App": {
+        "status": "Walk"
+      },
+      "AA": {
+        "score": 102.360,
+        "count": 4
+      },
+      "TeamScore": {
+        "score": 102.360,
+        "count": 12
+      }
+    },
+    {
+      "Team": "TUR",
+      "Flag": "tur.svg",
+      "Bib": 624,
+      "Name": "Terim F.",
+      "D": 5.400,
+      "E": 8.800,
+      "Pen": 0.3,
+      "App": {
+        "score": 12.500,
+        "count": 7
+      },
+      "AA": {
+        "score": 102.360,
+        "count": 4
+      },
+      "TeamScore": {
+        "score": 102.360,
+        "count": 12
+      }
+    },
+    {
+      "Team": "FRA",
+      "Flag": "fra.svg",
+      "Bib": 624,
+      "Name": "Terim F.",
+      "D": 5.400,
+      "E": 8.800,
+      "Pen": 0.3,
+      "App": {
+        "status": "Go"
+      },
+      "AA": {
+        "score": 102.360,
+        "count": 4
+      },
+      "TeamScore": {
+        "score": 102.360,
+        "count": 12
+      }
+    },
+    {
+      "Team": "ISR",
+      "Flag": "isr.svg",
+      "Bib": 401,
+      "Name": "Wilbord T.",
+      "D": 5.400,
+      "E": 8.800,
+      "Pen": 0.3,
+      "App": {
+        "score": 12.500,
+        "count": 15
+      },
+      "AA": {
+        "score": 102.360,
+        "count": 8
+      },
+      "TeamScore": {
+        "score": 102.360,
+        "count": 16
+      }
+    },
+    {
+      "Team": "GER",
+      "Flag": "ger.svg",
+      "Bib": 102,
+      "Name": "Balakov J.",
+      "D": 5.400,
+      "E": 8.800,
+      "Pen": 0.3,
+      "App": {
+        "score": 12.500,
+        "count": 15
+      },
+      "AA": {
+        "score": 102.360,
+        "count": 8
+      },
+      "TeamScore": {
+        "score": 102.360,
+        "count": 17
+      },
+      "Inquiry": true
+    }
+  ]
+  
